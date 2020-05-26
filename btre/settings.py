@@ -80,12 +80,19 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE':'sql_server.pyodbc',
-        'NAME':'btreDB',
-        'USER':'btreUser',
-        'PASSWORD':'$@Tya054218017',
-        'HOST':'localhost'
+    # 'default': {
+    #     'ENGINE':'sql_server.pyodbc',
+    #     'NAME':'btreDB',
+    #     'USER':'btreUser',
+    #     'PASSWORD':'$@Tya054218017',
+    #     'HOST':'localhost'
+    # }
+      'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'btredb',
+        'USER': 'postgres',
+        'PASSWORD': 'satyasingh10080',
+        'HOST': 'localhost'
     }
 }
 
@@ -114,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
